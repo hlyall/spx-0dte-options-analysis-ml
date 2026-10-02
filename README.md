@@ -6,7 +6,7 @@ Public companion code: **https://github.com/hlyall/spx-0dte-options-analysis-ml*
 
 The dashboard separates price observations, option sensitivities, rule-based playbooks and experimental model forecasts. It supports public/configured feeds, an explicit synthetic demonstration, and playback of locally archived observations. The separate historical downloader uses the same provider connections.
 
-![Synthetic demonstration of the companion dashboard](docs/screenshots/dashboard-demo.png)
+![Synthetic demonstration of the companion dashboard](docs/screenshots/dashboard-midnight-network.jpg)
 
 ## Start the dashboard
 

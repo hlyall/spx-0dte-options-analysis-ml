@@ -28,6 +28,10 @@ The app includes price/context charts, current and last detected playbooks, prem
 
 The payoff laboratory uses signed quantities (positive buys; negative sells), a 100 multiplier, premiums in index points and expiration intrinsic value. Its P/L excludes fees, slippage and interim Greek changes. It does not send orders.
 
+## Midnight Network theme
+
+The dashboard shares the books’ Midnight Network palette: midnight navy surfaces, ivory typography, cyan price and positive-direction marks, and gold reference levels, premium charts and news links. A decorative curve motif echoes the cover artwork; it does not represent market observations. Charts use the same CSS color tokens as the interface. Bearish marks and eligible reversal warnings remain red, and a detected reversal still changes the whole page theme immediately. The layout adapts to phones; keyboard focus remains visible and reduced-motion preferences are respected. No external fonts or image services are required.
+
 ## Range and pattern labels
 
 The portable app uses INSIDE, GAP-UP, GAP-DOWN, EXT-UP, EXT-DOWN and TWO-SIDED range labels. See [pattern conditions](dashboard-patterns.md) for all nine candidates, their actual code predicates, and the separate confirmation gates. Names describe observations; they do not assert a profitable strategy. Session history is rebuilt with these identifiers from raw observations.
