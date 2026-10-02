@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-10-01T20:16:49.043Z",
+  "notes": "Read-only probes. No raw licensed data included. Existing local services were not changed.",
+  "checks": [
+    {
+      "name": "theta_option_history",
+      "status": "ok",
+      "rowCount": 6,
+      "source": {
+        "provider": "theta",
+        "asOf": "2026-09-30T13:35:00.000Z",
+        "oldestAsOf": "2026-09-30T13:30:00.000Z",
+        "retrievedAt": "2026-10-01T20:16:47.383Z",
+        "timezone": "America/New_York",
+        "mode": "historical",
+        "delaySeconds": null,
+        "attribution": "ThetaData / OPRA",
+        "expiration": "2026-09-30",
+        "timestampMeaning": "Last quote at each sample time (not OHLC or guaranteed execution)"
+      },
+      "warnings": [],
+      "attempts": [],
+      "greeksAvailable": false,
+      "oiAvailable": false
+    },
+    {
+      "name": "theta_option_snapshot_greeks",
+      "status": "partial",
+      "rowCount": 1,
+      "source": {
+        "provider": "theta",
+        "asOf": "2026-10-01T20:16:46.823Z",
+        "oldestAsOf": "2026-10-01T20:16:46.823Z",
+        "retrievedAt": "2026-10-01T20:16:48.417Z",
+        "timezone": "America/New_York",
+        "mode": "realtime",
+        "delaySeconds": 0,
+        "attribution": "ThetaData / OPRA",
+        "expiration": "2026-10-02"
+      },
+      "warnings": [
+        "1 Greek records withheld because their underlying timestamp was missing or more than 60 seconds away.",
+        "OI uses its separate provider snapshot timestamp; the underlying OI business date is not supplied. Greek unit conventions are provider-specific."
+      ],
+      "attempts": [],
+      "greeksAvailable": false,
+      "oiAvailable": true
+    },
+    {
+      "name": "downloader_network",
+      "exitCode": 0
+    },
+    {
+      "name": "downloader_network_resume",
+      "exitCode": 0
+    }
+  ]
+}

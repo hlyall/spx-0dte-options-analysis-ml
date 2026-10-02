@@ -1,0 +1,34 @@
+import type { Bar, Quote } from "./engine.ts";
+import type { ParityData } from "./implied-price.ts";
+type Row = Record<string, unknown>;
+export type Source = {
+  name: string;
+  status: string;
+  rows: number;
+  timestamp: string | null;
+  detail: string;
+};
+export type MarketData = {
+  date: string;
+  previousDate: string;
+  today: string;
+  session: { open: number; close: number };
+  mode: string;
+  fetchedAt: string;
+  asOf: number;
+  sources: Source[];
+  spx: Bar[];
+  spy: Bar[];
+  priorSpx: Bar[];
+  priorSpy: Bar[];
+  quotes: Quote[];
+  chain: Quote[];
+  parity: ParityData;
+  measurement: { strike: number | null; selection: string };
+  openingIv: number | null;
+  openingIvTimestamp: string | null;
+  priorSpxClose: number | null;
+  priorSpyClose: number | null;
+  context: { symbol: string; bars: Bar[] }[];
+  spot: Row | null;
+};

@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {cashSession} from '../src/calendar.mjs';
+import {demoMarket} from '../src/demo.mjs';
+import {analyze,gammaProfile} from '../src/analytics.mjs';
+import {marketFromRows} from '../src/market-bridge.mjs';
+const calendar=JSON.parse(readFileSync(new URL('../../../config/cash-calendar.json',import.meta.url),'utf8'));
+test('published calendar distinguishes closed dates, normal dates and early cash close',()=>{assert.equal(cashSession('2026-10-01',calendar).close,960);assert.equal(cashSession('2026-11-27',calendar).close,780);assert.equal(cashSession('2026-12-24',calendar).close,780);assert.equal(cashSession('2026-11-26',calendar).closed,true);assert.equal(cashSession('2026-10-03',calendar).closed,true);assert.equal(cashSession('2029-10-01',calendar).verified,false);assert.throws(()=>cashSession('2026-02-30',calendar));});
+test('unknown session calendar withholds pattern warnings and forecast',()=>{const data=demoMarket(650).data,a=analyze(data,{calendarVerified:false});assert.equal(a.view.active,null);assert.equal(a.view.execution.passed,false);assert.equal(a.reversal,null);assert.equal(a.ema.status,'unavailable');assert.equal(a.sponge.status,'unavailable');assert.match(a.sponge.reason,/calendar/);assert.equal(a.history.latest,null);});
+test('non-minute-aligned bars are never recast as complete minute observations',()=>{const p=marketFromRows({date:'2026-10-01',cutoff:570,rows:[{symbol:'SPX',timestamp:'2026-10-01T13:30:30.000Z',interval:'1m',open:100,high:101,low:99,close:100,volume:0}]});assert.equal(p.data.spx.length,0);});
+test('future Greeks and malformed OI times withhold gamma proxy',()=>{const q={strike:5200,gamma:.01,openInterest:100,right:'CALL',timestamp:'2026-10-01T13:30:00Z'};assert.equal(gammaProfile([q],5200,'2026-10-01T13:31:00Z').rows.length,0);assert.equal(gammaProfile([{...q,openInterestTimestamp:'2026-10-01T10:00:00Z'}],5200,'2026-10-01T13:31:00Z').rows.length,1);assert.equal(gammaProfile([{...q,greeksTimestamp:'2026-10-01T13:32:00Z'}],5200,'2026-10-01T13:31:00Z').rows.length,0);assert.equal(gammaProfile([{...q,openInterestTimestamp:'unknown'}],5200,'2026-10-01T13:31:00Z').rows.length,0);});

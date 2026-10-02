@@ -1,0 +1,133 @@
+{
+  "checkedAt": "2026-10-01",
+  "scope": "Read-only verification of retained original source modules; no original service/config/data was changed",
+  "originalSourceFilesUnchanged": true,
+  "modules": [
+    {
+      "source": "lib/engine.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/engine.ts"
+    },
+    {
+      "source": "lib/readout.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/readout.ts"
+    },
+    {
+      "source": "lib/implied-price.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/implied-price.ts"
+    },
+    {
+      "source": "lib/playbook-guide.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/playbook-guide.ts"
+    },
+    {
+      "source": "lib/playbook-history.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/playbook-history.ts"
+    },
+    {
+      "source": "lib/regime-guide.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/regime-guide.ts"
+    },
+    {
+      "source": "lib/reversal-warning.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/reversal-warning.ts"
+    },
+    {
+      "source": "lib/ema-retest.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/ema-retest.ts"
+    },
+    {
+      "source": "lib/network-regime.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/network-regime.ts"
+    },
+    {
+      "source": "lib/network-forecast.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/network-forecast.ts"
+    },
+    {
+      "source": "lib/sponge-network.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/sponge-network.ts"
+    },
+    {
+      "source": "lib/sponge-interactions.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/sponge-interactions.ts"
+    },
+    {
+      "source": "lib/sponge-missing.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/sponge-missing.ts"
+    },
+    {
+      "source": "lib/sponge-forecast-view.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/sponge-forecast-view.ts"
+    },
+    {
+      "source": "lib/news-context.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/news-context.ts"
+    },
+    {
+      "source": "lib/sponge-news-interactions.ts",
+      "unchanged": true,
+      "export": "apps/dashboard/src/core/sponge-news-interactions.ts"
+    }
+  ],
+  "tests": {
+    "dashboard": 133,
+    "providerAndArchive": 29,
+    "failed": 0
+  },
+  "typecheck": "passed via build",
+  "build": "passed",
+  "preview": "http://127.0.0.1:8787",
+  "postOiGuardValidation": {
+    "testsPassed": 162,
+    "failed": 0,
+    "build": "passed",
+    "typecheck": "passed via build",
+    "regression": "calendar.test.mjs explicitly withholds gamma for missing OI timestamp and accepts known prior OI",
+    "previewRestarted": true,
+    "health": {
+      "status": "ok",
+      "name": "SPX Machine Intelligence",
+      "port": 8787,
+      "readOnly": true,
+      "version": "0.1.0"
+    },
+    "gammaRows": 31,
+    "reversal": "EXT-UP-COOLING",
+    "identifierNote": "Historical 2026-10-01 verification value translated to the current descriptive ID; not a new market observation."
+  },
+  "portableIdentifierRevision20261002": {
+    "checkedAt": "2026-10-02",
+    "scope": "Portable dashboard ID/copy revision only; separate production dashboards and services not changed",
+    "tests": {
+      "dashboard": 137,
+      "providerAndArchive": 29,
+      "passed": 166,
+      "failed": 0
+    },
+    "typecheck": "PASS",
+    "build": "PASS",
+    "legacyAliasesAdded": false,
+    "historyMigration": "Not required: portable history rebuilds from raw normalized observations.",
+    "limitations": [
+      "Renaming/descriptive copy does not establish original strategy or predictive edge.",
+      "INSIDE-SELLING and EXT-DOWN-RECOVERY remain non-executable under their existing default momentum gates; no numerical repair was made."
+    ],
+    "algorithmComparison": "PASS: TypeScript AST comparison of engine/readout/reversal-warning/history against pre-revision backup after translating IDs and omitting display copy.",
+    "ui": "PASS: desktop and 390px narrow viewport; screenshot refreshed."
+  }
+}

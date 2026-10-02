@@ -1,0 +1,103 @@
+[
+  {
+    "source": "lib/engine.ts",
+    "sha256": "b862cc91dc684637995d42ff854b4d526e3256cc396831caf9e5d911c41f0ed5",
+    "export": "apps/dashboard/src/core/engine.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied",
+    "portableRevision20261002": "descriptive range/playbook IDs and independently written code-derived display copy; numerical predicates unchanged"
+  },
+  {
+    "source": "lib/readout.ts",
+    "sha256": "214de19a09a90b4e8c313b92058a785a72fa5316d539582b2f3c41a5878f77cd",
+    "export": "apps/dashboard/src/core/readout.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied",
+    "portableRevision20261002": "candidate switch IDs translated; numeric predicates/order unchanged"
+  },
+  {
+    "source": "lib/implied-price.ts",
+    "sha256": "a9b1f0efffed9244fe402583925af3717ac545625d7380dc576e8095a26ccf17",
+    "export": "apps/dashboard/src/core/implied-price.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied"
+  },
+  {
+    "source": "lib/playbook-guide.ts",
+    "sha256": "c34549244ee8aaec69a8bddd2d30c9899420e6b4d97c2378e6321f83bda63e5d",
+    "export": "apps/dashboard/src/core/playbook-guide.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied",
+    "portableRevision20261002": "descriptive IDs and explanations independently rewritten from actual candidate/execution predicates; hyphenated regime parsing fixed"
+  },
+  {
+    "source": "lib/playbook-history.ts",
+    "sha256": "09c2de537526c9da9c6b3c32369fc01715b4651d479f07c871cf8e08fe97a4c9",
+    "export": "apps/dashboard/src/core/playbook-history.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied"
+  },
+  {
+    "source": "lib/regime-guide.ts",
+    "sha256": "6300ed3d7fbfbd5aa45b55a2e620d7d5a3d659ea3de8f575d42eb0afb154a589",
+    "export": "apps/dashboard/src/core/regime-guide.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied",
+    "portableRevision20261002": "descriptive IDs and explanations independently rewritten from classifyRegime comparisons"
+  },
+  {
+    "source": "lib/reversal-warning.ts",
+    "sha256": "75e2283db0e7954482598ab78265e53c6c6de0ed2dd1d93b2bbf8c3595cf3a5f",
+    "export": "apps/dashboard/src/core/reversal-warning.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied",
+    "portableRevision20261002": "descriptive warning IDs and code-derived warning copy; direction, affected exposure and timing unchanged"
+  },
+  {
+    "source": "lib/ema-retest.ts",
+    "sha256": "e3f521c3dc5379b3adefcadc2c9ed6aa3d663c1f11701bc32849ba6dfc754295",
+    "export": "apps/dashboard/src/core/ema-retest.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied"
+  },
+  {
+    "source": "lib/network-regime.ts",
+    "sha256": "f58121d5cd16fe599cebec5cdc448bb612a63f70504066b60b30448fa4580099",
+    "export": "apps/dashboard/src/core/network-regime.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied"
+  },
+  {
+    "source": "lib/network-forecast.ts",
+    "sha256": "fda1b7ed5c59eff3159047bc13825544921f205f70d58381dda52e63a6988a23",
+    "export": "apps/dashboard/src/core/network-forecast.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied"
+  },
+  {
+    "source": "lib/sponge-network.ts",
+    "sha256": "10146b9ec70883c4d35f65a71fedfc09bf25f367c582ede533ff91f484314a15",
+    "export": "apps/dashboard/src/core/sponge-network.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied"
+  },
+  {
+    "source": "lib/sponge-interactions.ts",
+    "sha256": "922f30ecc4e66a04823e0595feb6de3bfa76e5d4471b01a4488c13c6834a23f2",
+    "export": "apps/dashboard/src/core/sponge-interactions.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied"
+  },
+  {
+    "source": "lib/sponge-missing.ts",
+    "sha256": "eeca172e39edf7cf8c482fdebf8d789c337a324bb1d6f7addbb39894bc288f0a",
+    "export": "apps/dashboard/src/core/sponge-missing.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied"
+  },
+  {
+    "source": "lib/sponge-forecast-view.ts",
+    "sha256": "dbf7ee8089d33c5c001bd2540a5376daa1c49d9735973d075b9f2d095e2dd859",
+    "export": "apps/dashboard/src/core/sponge-forecast-view.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied"
+  },
+  {
+    "source": "lib/news-context.ts",
+    "sha256": "5f5bd06be4f391b3935312e658ab7e6b89b746d75cb5fd6d51940e442558b12d",
+    "export": "apps/dashboard/src/core/news-context.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied"
+  },
+  {
+    "source": "lib/sponge-news-interactions.ts",
+    "sha256": "f413a058ca663159d8de73a0fc6ccf037c1a78593ae5265c11d64836bbc6099d",
+    "export": "apps/dashboard/src/core/sponge-news-interactions.ts",
+    "change": "explicit .ts imports where required for Node; no data or services copied"
+  }
+]

@@ -1,0 +1,27 @@
+node_modules/
+.env
+.env.*
+!.env.example
+config/providers.json
+config/sessions.json
+data/
+models/
+coverage/
+.DS_Store
+*.log
+*.pid
+__pycache__/
+.venv/
+/output/
+qa/
+book/.build-deps/
+book/.matplotlib/
+PROJECT_STATUS.md
+
+# Keep separately copyrighted books and private publishing material out.
+/book/
+/companion/*
+!/companion/examples/
+/covers/
+/EDITORIAL-REVIEW.md
+/docs/release-verification.json

@@ -1,0 +1,25 @@
+SPX 0DTE Options Analysis and ML
+Copyright (c) 2026 Mark Lyall
+
+The MIT license applies to the software, tests, build scripts, executable
+mathematical examples and software documentation in this repository. The books
+0DTE Options Decoded and 0DTE Options Engineered and their original figures are
+separately copyrighted and are not distributed in this code repository.
+
+Analysis modules were refactored from the author's local dashboard. The source
+and export module hashes are recorded in docs/dashboard-refactor-provenance.json.
+The portable app does not bundle the original deployment framework, proprietary
+indicators, licensed market datasets, source-book images or account integrations.
+
+Ideas discussed in the manuscript include user-supplied excerpts from Foxchase's
+0DTE: Regimes, Volatility, and Execution and John Chiong's SPX 0DTE Options Income
+Strategies. Attribution is not endorsement or a claim of shared ownership.
+Bibliographic details, verification limits and original figure attribution remain in the
+separately distributed books.
+
+SPX, SPY, vendor names and other marks belong to their respective owners. This
+project is not endorsed by an exchange, broker, data vendor or cited author.
+Third-party data access and redistribution remain governed by their own terms.
+
+Installed dependencies retain their own licenses. The repository's lockfile
+records the dependency versions; npm installation retrieves those packages.

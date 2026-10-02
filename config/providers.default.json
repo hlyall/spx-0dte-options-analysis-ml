@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "timeoutMs": 12000,
+  "retries": 1,
+  "minimumRequestIntervalMs": 500,
+  "cacheTtlMs": 60000,
+  "providers": {
+    "yahoo": {"enabled": true},
+    "stooq": {"enabled": true},
+    "fred": {"enabled": true},
+    "fed": {"enabled": true},
+    "theta": {"enabled": false, "baseUrl": "http://127.0.0.1:25503/v3"},
+    "tradier": {"enabled": false, "sandbox": true}
+  },
+  "priority": {
+    "quote": ["theta", "tradier", "yahoo", "stooq", "fred"],
+    "bars": ["theta", "tradier", "yahoo", "stooq"],
+    "options": ["theta", "tradier"],
+    "optionHistory": ["theta"],
+    "news": ["fed"]
+  }
+}

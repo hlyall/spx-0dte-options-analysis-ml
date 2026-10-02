@@ -1,0 +1,38 @@
+{
+  "name": "spx-machine-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open research dashboard accompanying 0DTE Options Decoded and 0DTE Options Engineered",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "workspaces": [
+    "apps/dashboard",
+    "packages/market-data",
+    "tools/downloader"
+  ],
+  "scripts": {
+    "start": "node --env-file-if-exists=.env apps/dashboard/src/server.mjs",
+    "dev": "node --env-file-if-exists=.env apps/dashboard/src/server.mjs",
+    "build": "npm run build --workspace=@spx/dashboard",
+    "typecheck": "npm run typecheck --workspace=@spx/dashboard",
+    "test": "npm run test --workspaces --if-present && npm run test:examples",
+    "test:examples": "node --test companion/examples/*.test.mjs",
+    "download": "node --env-file-if-exists=.env tools/downloader/cli.mjs",
+    "providers": "node --env-file-if-exists=.env tools/downloader/cli.mjs --list-providers"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "22.19.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hlyall/spx-0dte-options-analysis-ml.git"
+  },
+  "homepage": "https://github.com/hlyall/spx-0dte-options-analysis-ml",
+  "bugs": {
+    "url": "https://github.com/hlyall/spx-0dte-options-analysis-ml/issues"
+  },
+  "license": "MIT"
+}

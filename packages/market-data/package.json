@@ -1,0 +1,9 @@
+{
+  "name": "@spx-mi/market-data",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "exports": "./src/index.mjs",
+  "scripts": {"test": "node --test tests/*.test.mjs"},
+  "engines": {"node": ">=22.18"}
+}
