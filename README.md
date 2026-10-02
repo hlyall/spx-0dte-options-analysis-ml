@@ -1,6 +1,6 @@
 # SPX 0DTE Options Analysis and ML
 
-An open-source local options-research dashboard accompanying **0DTE Options Decoded** and **0DTE Options Engineered**, by **Mark Lyall**. Both books focus on SPX, with SPY market context.
+An open-source local options-research dashboard accompanying **0DTE Options Decoded** and **0DTE Options Engineered**, by **Harmohit Lyall**. Both books focus on SPX, with SPY market context.
 
 Public companion code: **https://github.com/hlyall/spx-0dte-options-analysis-ml**. The two books are separately copyrighted publications; this repository contains the software, documentation and executable mathematical examples.
 
@@ -117,6 +117,6 @@ The technical companion explains the implementation, mathematical models, data c
 
 ## License and publication scope
 
-Software copyright © 2026 Mark Lyall, [MIT License](LICENSE). The manuscripts and original book figures retain their separate copyright and are not included in this code repository. Third-party source books, screenshots, licensed market records, credentials and private account data are not included. See [NOTICE](NOTICE).
+Software copyright © 2026 Harmohit Lyall, [MIT License](LICENSE). The manuscripts and original book figures retain their separate copyright and are not included in this code repository. Third-party source books, screenshots, licensed market records, credentials and private account data are not included. See [NOTICE](NOTICE).
 
 This is a local research application. Publishing its source does not host a dashboard or market-data service. Experimental forecasts are research outputs, not proven trading returns.
