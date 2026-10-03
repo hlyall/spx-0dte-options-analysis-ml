@@ -8,6 +8,13 @@ The dashboard separates price observations, option sensitivities, rule-based pla
 
 ![Synthetic demonstration of the companion dashboard](docs/screenshots/dashboard-midnight-network.jpg)
 
+## Kindle books
+
+Both books are now available on Amazon Kindle:
+
+- [**0DTE Options Decoded**](https://www.amazon.com/dp/B0HLTVJ6L5) — the practical guide to SPX trading, the Greeks, and machine intelligence.
+- [**0DTE Options Engineered**](https://www.amazon.com/dp/B0HLTVB1JX) — the mathematical and code-focused companion.
+
 ## Start the dashboard
 
 Requires **Node 22.18 or newer**. Node 24 is also supported. From this directory:
@@ -82,6 +89,8 @@ This is a bounded example, not a recommended trade or a claim that the contract 
 
 ## 0DTE Options Decoded
 
+[Available on Amazon Kindle](https://www.amazon.com/dp/B0HLTVJ6L5).
+
 *A Practical Guide to SPX Trading, the Greeks, and Machine Intelligence* · With SPY Market Context
 
 This beginner and intermediate volume explains contract mechanics, Greeks, defined-risk structures, execution and how to interpret analytical tools. The research reports negative and inconclusive findings as well as implementation lessons; the experimental network additions did not establish an options-trading edge.
@@ -110,6 +119,8 @@ docs/                 Capability, provenance, migration and verification notes
 ```
 
 ## 0DTE Options Engineered
+
+[Available on Amazon Kindle](https://www.amazon.com/dp/B0HLTVB1JX).
 
 *The Mathematics, Code, and Models Behind SPX Trading Analytics* · With SPY Market Context
 
