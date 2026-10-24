@@ -6,6 +6,14 @@ Public companion code: **https://github.com/hlyall/spx-0dte-options-analysis-ml*
 
 The dashboard separates price observations, option sensitivities, rule-based playbooks and experimental model forecasts. It supports public/configured feeds, an explicit synthetic demonstration, and playback of locally archived observations. The separate historical downloader uses the same provider connections.
 
+## Website and interactive sample
+
+- [**0DTE Options website**](https://spx0dteoptions.ai/) — book information and the captioned video overview.
+- [**Try the sample dashboard**](https://spx0dteoptions.ai/dashboard/index.html) — browser-only session playback, Gamma/OI ladder, chain explorer, and payoff laboratory.
+- [**Watch the overview**](https://spx0dteoptions.ai/#overview).
+
+The hosted sample uses invented synthetic data and requires no login or API credentials. Run this repository locally to use configured feeds and archived observations.
+
 ## Dashboard walkthrough
 
 A captioned tour of the running dashboard, including the Gamma/OI ladder. **All prices, quotes, news, and OI shown are invented synthetic demo data.** The model panel accurately shows its unavailable state without an eligible model bundle.
