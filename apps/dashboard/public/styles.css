@@ -223,3 +223,7 @@ svg text { font-family: ui-sans-serif, system-ui, sans-serif; }
   .mode-switch button { font-size: 11px; padding-inline: 6px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.ladder-scroll { max-height: 620px; }
+.ladder-cell { width: 25%; }
+.ladder-spot td { border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold); }

@@ -92,3 +92,9 @@ This release does **not** include the original private training pipeline or auto
 ## Verification and scope
 
 Run `npm test`, `npm run typecheck` and `npm run build`. See [feature parity](dashboard-feature-parity.md), [migration](dashboard-migration.md), and [integration audit](release-integration-audit.md). The browser is a research interface with no brokerage actions, account credentials or order automation.
+
+## Gamma / OI ladder
+
+The strike-structure panel switches between Gamma and open interest, with call, net/total, and put columns across up to 21 strikes nearest a 25-point SPX anchor. The nearest strike is marked when an eligible SPX anchor exists. Gamma is the conventional call-positive / put-negative exposure proxy in dollars per 1% SPX move, not observed dealer inventory. OI is unsigned contracts and can remain available without gamma or a cash anchor. There are no vanna or charm modes.
+
+Missing or duplicate legs leave the combined cell unknown. Gamma requires a spot and contract snapshot within two minutes of the selected cutoff, eligible gamma timestamps, and timestamped OI available by that cutoff. OI without a verified as-of timestamp is withheld. Replay uses its selected cutoff; synthetic mode uses invented, labeled inputs. Shading is relative to the displayed window, and the snapshot cutoff is shown below the ladder. The panel is display-only and does not change alerts or forecasts.

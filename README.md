@@ -36,7 +36,7 @@ The default view attempts the enabled public sources. Choose **Synthetic demo** 
 - Reused, inspectable market-structure and premium-behavior calculations.
 - Current and previous detected playbook, EMA retest observations and reversal attention.
 - Descriptive range states: inside, gap above, gap below, upper extension, lower extension and two-sided expansion.
-- Option-chain tables, a declared gamma proxy, and a multi-leg expiration-payoff laboratory.
+- Option-chain tables, a declared gamma proxy, a descending-strike Gamma/OI ladder, and a multi-leg expiration-payoff laboratory.
 - Eleven-sector context, oil/yield observations and rule-based news routing.
 - Optional frozen model bundles with explicit validity and input-quality checks.
 - Source identity, observation times, delays, availability and capability limits.

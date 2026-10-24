@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {buildLadder,ladderMarkup} from '../public/gamma-ladder.js';
+const cutoffIso='2026-10-01T14:30:00Z',date='2026-10-01';
+const q=right=>({strike:5200,right,expiration:date,timestamp:cutoffIso,openInterestAsOf:'2026-09-30T21:00:00Z',openInterest:100,gamma:.01});
+const input={chain:[q('CALL'),q('PUT')],spot:5200,spotTime:cutoffIso,cutoffIso,date};
+test('gamma signs, units and complete pairs',()=>{const v=buildLadder(input);assert.equal(v.rows[0].call,.01*100*100*5200**2*.01);assert.equal(v.rows[0].put,-v.rows[0].call);assert.equal(v.rows[0].net,0);assert.equal(v.complete,1);});
+test('OI remains available without gamma or cash anchor',()=>{const v=buildLadder({...input,spot:null,mode:'oi',chain:input.chain.map(q=>({...q,gamma:undefined}))});assert.equal(v.rows[0].net,200);assert.equal(v.spot,null);});
+test('missing or duplicate legs do not invent combined values',()=>{for(const chain of [[q('CALL')],[q('CALL'),q('CALL'),q('PUT')]]){const v=buildLadder({...input,chain});assert.equal(v.rows[0].net,null);assert.match(ladderMarkup(v),/—/);}});
+test('future OI and stale or future Greeks are withheld',()=>{for(const patch of [{openInterestAsOf:'2026-10-02T00:00:00Z'},{timestamp:'2026-10-01T14:20:00Z'},{greeksTimestamp:'2026-10-01T14:31:00Z'}]){assert.equal(buildLadder({...input,chain:[{...q('CALL'),...patch},q('PUT')]}).rows[0].call,null);}assert.equal(buildLadder({...input,spotTime:'2026-10-01T14:20:00Z'}).rows[0].call,null);});
+test('descending viewport is limited to 21 strikes and has only gamma and OI',()=>{const chain=Array.from({length:40},(_,i)=>({...q('CALL'),strike:5100+i*5}));const v=buildLadder({...input,chain});assert.equal(v.rows.length,21);assert.ok(v.rows.every((r,i)=>!i||r.strike<v.rows[i-1].strike));assert.equal(buildLadder({...input,mode:'vanna'}).mode,'gamma');});
