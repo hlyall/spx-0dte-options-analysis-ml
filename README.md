@@ -16,7 +16,7 @@ The hosted sample uses invented synthetic data and requires no login or API cred
 
 ## Dashboard walkthrough
 
-A captioned tour of the running dashboard, including the Gamma/OI ladder. **All prices, quotes, news, and OI shown are invented synthetic demo data.** The walkthrough was recorded with an earlier layout that included a model panel; that panel has since been removed from the dashboard.
+A captioned tour of the running dashboard, including the Gamma/OI ladder. **All prices, quotes, news, and OI shown are invented synthetic demo data.**
 
 [**Watch or download the walkthrough (MP4)**](https://github.com/hlyall/spx-0dte-options-analysis-ml/raw/refs/heads/main/docs/media/dashboard-walkthrough.mp4)
 
