@@ -12,7 +12,7 @@ This is a portable companion refactor, not a claim that every private deployment
 | Greek chain | Source bid/ask and Greeks with timestamps; clearly synthetic BSM demo | Licensed/entitled source for actual SPXW; Greek units remain explicit |
 | Gamma / OI | Conditional call-positive/put-negative exposure by strike | Assumed inventory signs, partial observed chain, coherent time and known OI; no dealer-position claim |
 | Sector graph | Retained rolling correlation engine and interactive SVG view of eleven sectors plus macro/news nodes | Descriptive correlation; daily/invalid bars do not become intraday data |
-| Persistent sponge inference | Retained sector, macro, interaction and missing-input parsers/inference | Compatible validated model files supplied by user; no private artifacts or training pipeline bundled |
+| Experimental inference (research code only; no dashboard panel) | Retained sector, macro, interaction and missing-input parsers/inference | Compatible validated model files supplied by user; no private artifacts or training pipeline bundled |
 | Missing-input estimates | Compatible saved reconstruction-bundle support retained | No invented reconstructions when the required trained bundle is absent |
 | News relevance | Preserved headline cue/routing semantics, visible multiple-sector/oil/rate routes | Twelve illustrative issuer rules; no full constituent database or paid newswire; routes are not causal weights |
 | Playback | Manifest-driven normalized archive, date/minute playback and strict availability cutoff | Downloaded data only; no private recorder connection or bundled market history |

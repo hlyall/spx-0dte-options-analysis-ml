@@ -24,7 +24,7 @@ Open the printed local address. Root commands load a local `.env` file when pres
 
 Select a view, then refresh. Demo/replay have a date, a minute slider and a play/pause control. Connected data refreshes at most once per minute while the tab is visible. A server cache also limits duplicate requests. Demo uses an invented October 1, 2026 session; moving its date control does not create real history.
 
-The app includes price/context charts, current and last detected playbooks, premium z-score, EMA retests, conditional gamma exposure, a rolling sector network, news routes, a persistent-model panel, an options chain and an editable expiration-payoff laboratory. A detected eligible reversal changes the page theme immediately; confirmation remains a separate entry gate. A hidden connected-feed tab flashes its title when a reversal is detected, except when reduced motion is requested. Demo and replay do not issue hidden-tab alerts.
+The app includes price/context charts, current and last detected playbooks, premium z-score, EMA retests, conditional gamma exposure, a rolling sector network, news routes, an options chain and an editable expiration-payoff laboratory. A detected eligible reversal changes the page theme immediately; confirmation remains a separate entry gate. A hidden connected-feed tab flashes its title when a reversal is detected, except when reduced motion is requested. Demo and replay do not issue hidden-tab alerts.
 
 The payoff laboratory uses signed quantities (positive buys; negative sells), a 100 multiplier, premiums in index points and expiration intrinsic value. Its P/L excludes fees, slippage and interim Greek changes. It does not send orders.
 
@@ -77,7 +77,7 @@ Only set `verified: true` after verifying the dated exchange notice. A global `S
 
 ## Persistent learned models
 
-No private trained model or licensed training dataset is bundled. The rolling correlation network is available independently; it is descriptive and is not the learned model's directional forecast. The persistent-model panel therefore starts as **Unavailable**. This is an intentional missing-evidence state.
+No private trained model or licensed training dataset is bundled. The rolling correlation network is available independently; it is descriptive and is not the learned model's directional forecast. The Sponge forecast panel has been removed from the dashboard. The experimental inference code remains available for research and the book examples, with its existing missing-evidence safeguards.
 
 If you own compatible, independently validated artifacts, put them in `models/` (or `SPX_MODEL_DIR`):
 

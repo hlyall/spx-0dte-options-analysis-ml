@@ -4,7 +4,7 @@ An open-source local options-research dashboard accompanying **0DTE Options Deco
 
 Public companion code: **https://github.com/hlyall/spx-0dte-options-analysis-ml**. The two books are separately copyrighted publications; this repository contains the software, documentation and executable mathematical examples.
 
-The dashboard separates price observations, option sensitivities, rule-based playbooks and experimental model forecasts. It supports public/configured feeds, an explicit synthetic demonstration, and playback of locally archived observations. The separate historical downloader uses the same provider connections.
+The dashboard separates price observations, option sensitivities, rule-based playbooks and market context. It supports public/configured feeds, an explicit synthetic demonstration, and playback of locally archived observations. The separate historical downloader uses the same provider connections.
 
 ## Website and interactive sample
 
@@ -16,7 +16,7 @@ The hosted sample uses invented synthetic data and requires no login or API cred
 
 ## Dashboard walkthrough
 
-A captioned tour of the running dashboard, including the Gamma/OI ladder. **All prices, quotes, news, and OI shown are invented synthetic demo data.** The model panel accurately shows its unavailable state without an eligible model bundle.
+A captioned tour of the running dashboard, including the Gamma/OI ladder. **All prices, quotes, news, and OI shown are invented synthetic demo data.** The walkthrough was recorded with an earlier layout that included a model panel; that panel has since been removed from the dashboard.
 
 [**Watch or download the walkthrough (MP4)**](https://github.com/hlyall/spx-0dte-options-analysis-ml/raw/refs/heads/main/docs/media/dashboard-walkthrough.mp4)
 
@@ -31,7 +31,7 @@ Click a screenshot to view it at full size. Each overlay explains the highlighte
 | [Overview](docs/screenshots/tour-overview.jpg) | Source identity, session controls, and market metrics |
 | [Session map & playbooks](docs/screenshots/tour-session-map.jpg) | Price structure, pattern checks, and previous detections |
 | [Premium, gamma & EMA](docs/screenshots/tour-premium-gamma-ema.jpg) | Premium behavior, exposure assumptions, and EMA retests |
-| [Network & model status](docs/screenshots/tour-network.jpg) | Sector relationships, news relevance, and model availability |
+| [Network & news context](docs/screenshots/tour-network.jpg) | Sector relationships and news relevance |
 | [Options laboratory](docs/screenshots/tour-options-laboratory.jpg) | Editable legs and educational expiration payoff |
 | [Gamma ladder](docs/screenshots/tour-gamma-ladder.jpg) | Call-positive / put-negative exposure proxy by strike |
 | [Open-interest ladder](docs/screenshots/tour-oi-ladder.jpg) | Unsigned call, total, and put inventory |
@@ -52,9 +52,9 @@ Click a screenshot to view it at full size. Each overlay explains the highlighte
 </details>
 
 <details>
-<summary>Market network and model availability</summary>
+<summary>Market network and news context</summary>
 
-![Market network and model availability — synthetic demo with explanatory overlay](docs/screenshots/tour-network.jpg)
+![Market network and news context — synthetic demo with explanatory overlay](docs/screenshots/tour-network.jpg)
 
 </details>
 
